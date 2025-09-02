@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment no 4</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignmnet No 4</h1>
+    <hr>
+    <hr>
+    <h1>What is anchor tag ?</h1>
+    <p>In HTML, an anchor tag is written as &lt;a&gt; and it is used to create hyperlinks.
+        It connects one page to another, or links to external websites, files, emails, or even specific sections within the same page.</p>
+    <h2>Example</h2>
+        <p>&lt;a href="https://example.com"&gt;Click Here &lt;a&gt;</p>
+    <hr>
+        <p><strong>Attributes of Anchor tags</strong></p>
+        <p>It has several attributes that control how the link behaves.</p>
+    <h2>1:<code>Href</code></h2>
+        <!--Hypertext Refrence-->
+        <p>The href attribute in the anchor tag &lt;a&gt; stands for Hypertext Reference.
+            It tells the browser where the link should go when the user clicks on it.</p>
+            <strong>Example</strong>
+        <pre>
+ &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+(<a href="https://www.Gooooooooooooogle.com"> Example</a>)
+        </pre>
+         <p> This link will take you to "Example.com" when clicked.</p>
+     <hr>
+    <h2>2:<code>Target</code></h2>
+        <p>The target attribute in the &lt;a&gt; tag tells the browser where to open the link when a user clicks it</p>
+            <ul>
+            <li><code>_self Default. Open in the same tab.</code></li>
+            <li><code>_blank:Open in a new tab.</code></li>
+            <li><code>_parent: Open in the parent frame.</code></li>
+            <li><code>_top: Open in the full body of the window.</code></li></p>
+            </ul>
+        <p><strong>Example</strong></p>
+         <pre>
+&lt;a href="https://example.com" target="_blank"&gt;Open in New Tab&lt;/a&gt;
+(<a href="https://example.com" target="_blank">Open in New Tab</a>)
+        </pre>
+     <hr>
+    <h2>3:<code>Download</code></h2>
+        <p>The download attribute in the &lt;a&gt; (anchor) tag is used when you want the user to download a file instead of opening it in the browser.</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="example.pdf" download&gt;Download pdf&lt;/a&gt;
+(<a href="example.pdf" download>Download pdf</a>)
+        </pre>
+        <p>This link will download the file"example.pdf".</p>
+    <hr>
+    <h2>4:<Code>Rel</Code></h2>
+        <p>The rel attribute in the &lt;a&gt; tag defines the relationship between the current page and the linked page/document.
+
+            It is very useful for SEO, security, and link behavior</p>
+            <ul>
+            <li><code>nofollow: Tells search engines not to follow the link.<</code>/li>
+            <li><code>noopener: Prevents the new tab from accessing the original page's context.</code></l>
+            <li><code>noreferrer: Prevents sending referrer information.</code></l>
+            <p><strong>Example</strong></p>
+            <pre>
+&lt;a href="https://www.example.com" rel="nofollow noopener"&gt; Visit Example &lt;a&gt;
+(<a href="https://www.example.com" rel="nofollow">Visit Example</a>)
+</pre>
+    <hr>
+    <h2>5:<code>Tittle</code></h2>
+        <p>The title attribute gives extra information about an element.
+            When a user hovers the mouse over that element.</p>
+        <p><strong>Example</strong></p>
+         <pre>
+&lt;a href="https://www.example.com" title="Go to Example"&gt;Visit Example &lt;/a&gt;
+(<a href="https://www.example.com" title="Go to Example">Visit Example</a>)
+    </pre>
+    <p>Hovering over this link will display the tooltip "Go to Example".</p>
+    <hr>
+    <h2>6:<code>Id</code></h2>
+        <p>The id attribute in HTML is used to give an element a unique identifier (name) on a webpage.</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#section1"&gt; Go to section 1 &lt;/a&gt;
+(<a href="#Section1"> Go to Section 1</a>
+<section id=""section1">This is section 1</section>
+</pre>
+<p>Clicking this link scrolls to the element with <code>id="section1"</code>.</p>
+    <hr>
+    <h2>7:Class</h2>
+        <p>Assigns a class for styling or javaScript interactions.</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#" class="btn"&gt; Click Me &lt;/a&gt;
+<a href="#" class="btn"> Click Me</a>
+</pre>
+    <br>
+    <p>Use CSS or JavaScript to style or interact with elements using the class name.</p>
+    <hr>
+    <h2>8:<code>Style</code></h2>
+        <p>In HTML, the style attribute is used to apply CSS (Cascading Style Sheets) directly to an element.</p>
+
+        <p>👉 It tells the browser how the element should look (color, size, background, borders, etc.).</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#" style="color: red; font-weight:bold;"&gt;Styled link&lt;/a&gt;
+<a href="#" style="color: red; font-weight:bold;">Styled link </a>
+</pre>
+    <hr>
+    <h2>9:<code>Tabindex</code></h2>
+        <p>👉 It defines how people navigate through elements (like links, buttons, forms) without using a mouse — very important for accessibility.</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#" tabindex="1"&gt;First&lt;/a&gt;
+<a href="#" tabindex="1">First</a>
+<a href="#" tabindex="2">Second</a>
+</pre>
+    <hr>
+    <h2>10:<code>accesskey</code></h2>
+        <p>When the user presses that key combination, the browser will focus or activate that element.</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#" accesskey="h"&gt;Press Alt+h to open&lt;/a&gt;
+<a href="#" accesskey="h">Press Alt+h to open</a>
+</pre>
+    <hr>
+    <h2>11:<code>aria-*</code></h2>
+        <p>Attributes for accessibility purpose (e.g,aria-label).</p>
+        <p><strong>Example</strong></p>
+        <pre>
+&lt;a href="#" aria-label="Go to the Homepage"&gt;Home&lt;/a&gt;
+<a href="#" aria-label="Go to Homepage">Home</a>
+</pre>
+    <hr>
+    <hr>
+*--------------------------------------------------------------------*
+<>
+    <h1>HTML Entities</h1>
+    <p>
+        HTML entities are special codes in HTML used to display reserved characters, symbols, or characters that are not available on the keyboard.If you want to display characters like <, >, &, ©, ®, ♥ etc. in a web page, you can’t just type them directly because some have special meaning in HTML. Instead, you use HTML entities.
+    </p>
+    <hr>
+    <pre>
+        &lt;: Less than sign(<)
+        &gt;: Greater than sign (>)
+        &amp;: Ampersand(&)
+        &quot;: double quotation mark(")
+        &apos;: Single quotation mark(')
+        &nbsp;: Non-breaking   Space( )
+        &dollar;: Dollar sign($)
+        &copy;: Copyright symbol (&copy)
+        &reg;:Registered trademark symbol (&reg)
+        &trade;: Trademark symbol(&trade;)
+        &hearts;: Heart Symbol(&hearts;)
+        
+        <img src="./pic/entities.png" alt=""entities>
+    </pre>
+    <hr>
+    <h2>Example</h2>
+    <p>This is an example of a &lt;p&gt; tag.</p>
+    <p>&copy; 2024 Mrmaania Company. All rights reserved.</p>
+
+    <hr>
+
+    <pre>
+        1: When might you use the &nbsp; entity?
+        &nbsp; stands for Non-Breaking Space in HTML.It looks like a normal space,
+         but it prevents the browser from breaking (wrapping) text at that position.
+        
+
+        2: How would you display a trademark symbol using an html entity?
+        you can display a trademark symbol using the &trade: enetity: & trade.
+
+        3: why is it important to use html entities for special characters?
+        Using Html symbols ensures proper rendering of characters and symbols and
+        helps avoid conflicts with html syntax. 
+
+        4: Represent the dollar sign symbol using different Html entity methods.
+        Using Named Entity: &dollar;
+
+        Using hexadecimal numeric Reference : &#x24;
+
+        Using Decimal Numeric Reference: &#36;
+        </pre>
+
+            <hr><hr>
+
+            <p>&copy; 2024 Mrmaania Company. All rights reserved.</p>
+        
+</div>
+</body>
+</html>
